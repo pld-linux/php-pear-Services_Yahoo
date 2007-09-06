@@ -7,11 +7,12 @@ Summary:	%{_pearname} - provides access to the Yahoo! Web Services
 Summary(pl.UTF-8):	%{_pearname} - umożliwia dostęp do web services Yahoo!
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	1
+Release:	2
 License:	Apache License, Version 2.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	d4fb681ed6686584ba43ec493aa18f27
+Patch0:		%{name}-paths_fix.patch
 URL:		http://pear.php.net/package/Services_Yahoo/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -49,6 +50,7 @@ Testy dla PEAR::%{_pearname}.
 
 %prep
 %pear_package_setup
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT

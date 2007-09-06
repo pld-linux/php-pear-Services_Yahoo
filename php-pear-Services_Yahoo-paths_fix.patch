@@ -1,0 +1,77 @@
+--- Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/Search/image.php~	2007-09-06 23:08:13.000000000 +0000
++++ Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/Search/image.php	2007-09-06 23:12:49.000000000 +0000
+@@ -27,7 +27,7 @@
+  * @link       http://pear.php.net/package/Services_Yahoo
+  */
+ 
+-require_once "AbstractSearch.php";
++require_once "Services/Yahoo/Search/AbstractSearch.php";
+ 
+ /**
+  * Image search class
+--- Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/Search/local.php~	2007-09-06 23:08:13.000000000 +0000
++++ Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/Search/local.php	2007-09-06 23:11:32.000000000 +0000
+@@ -27,7 +27,7 @@
+  * @link       http://pear.php.net/package/Services_Yahoo
+  */
+ 
+-require_once "AbstractSearch.php";
++require_once "Services/Yahoo/Search/AbstractSearch.php";
+ 
+ /**
+  * Local search class
+--- Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/Search/news.php~	2007-09-06 23:08:13.000000000 +0000
++++ Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/Search/news.php	2007-09-06 23:13:00.000000000 +0000
+@@ -27,7 +27,7 @@
+  * @link       http://pear.php.net/package/Services_Yahoo
+  */
+ 
+-require_once "AbstractSearch.php";
++require_once "Services/Yahoo/Search/AbstractSearch.php";
+ 
+ /**
+  * News search class
+--- Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/Search/video.php~	2007-09-06 23:11:15.000000000 +0000
++++ Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/Search/video.php	2007-09-06 23:11:19.000000000 +0000
+@@ -27,7 +27,7 @@
+  * @link       http://pear.php.net/package/Services_Yahoo
+  */
+ 
+-require_once "AbstractSearch.php";
++require_once "Services/Yahoo/Search/AbstractSearch.php";
+ 
+ /**
+  * Video search class
+--- Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/Search/web.php~	2007-09-06 23:08:13.000000000 +0000
++++ Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/Search/web.php	2007-09-06 23:12:30.000000000 +0000
+@@ -27,7 +27,7 @@
+  * @link       http://pear.php.net/package/Services_Yahoo
+  */
+ 
+-require_once "AbstractSearch.php";
++require_once "Services/Yahoo/Search/AbstractSearch.php";
+ 
+ /**
+  * Web search class
+--- Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/ContentAnalysis/spellingSuggestion.php~	2007-09-06 23:09:23.000000000 +0000
++++ Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/ContentAnalysis/spellingSuggestion.php	2007-09-06 23:09:30.000000000 +0000
+@@ -27,7 +27,7 @@
+  * @link       http://pear.php.net/package/Services_Yahoo
+  */
+ 
+-require_once "AbstractContentAnalysis.php";
++require_once "Services/Yahoo/ContentAnalysis/AbstractContentAnalysis.php";
+ 
+ /**
+  * Spelling Suggestion service class
+--- Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/ContentAnalysis/termExtraction.php~	2007-09-06 23:08:13.000000000 +0000
++++ Services_Yahoo-0.2.0/usr/share/pear/Services/Yahoo/ContentAnalysis/termExtraction.php	2007-09-06 23:10:15.000000000 +0000
+@@ -27,7 +27,7 @@
+  * @link       http://pear.php.net/package/Services_Yahoo
+  */
+ 
+-require_once "AbstractContentAnalysis.php";
++require_once "Services/Yahoo/ContentAnalysis/AbstractContentAnalysis.php";
+ 
+ /**
+  * Term Extraction service class

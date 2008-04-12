@@ -4,7 +4,7 @@
 %define		_status		alpha
 %define		_pearname	Services_Yahoo
 Summary:	%{_pearname} - provides access to the Yahoo! Web Services
-Summary(pl.UTF-8):	%{_pearname} - umożliwia dostęp do web services Yahoo!
+Summary(pl.UTF-8):	%{_pearname} - klasa umożliwiająca dostęp do usług WWW Yahoo!
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
 Release:	5
@@ -24,13 +24,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Services_Yahoo provides object-oriented interfaces to the web service
-capabilities of Yahoo
+capabilities of Yahoo.
 
 In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
-Services_Yahoo dostarcza zorientowany obiektowo interfejs do web
-services Yahoo.
+Services_Yahoo dostarcza zorientowany obiektowo interfejs do usług WWW
+Yahoo.
 
 Ta klasa ma w PEAR status: %{_status}.
 

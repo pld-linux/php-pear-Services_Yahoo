@@ -1,24 +1,23 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Services
-%define		_subclass	Yahoo
 %define		_status		alpha
 %define		_pearname	Services_Yahoo
 Summary:	%{_pearname} - provides access to the Yahoo! Web Services
 Summary(pl.UTF-8):	%{_pearname} - klasa umożliwiająca dostęp do usług WWW Yahoo!
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	5
-License:	Apache License, Version 2.0
+Release:	6
+License:	Apache v2.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	d4fb681ed6686584ba43ec493aa18f27
 Patch0:		%{name}-paths_fix.patch
 URL:		http://pear.php.net/package/Services_Yahoo/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-HTTP_Request
-Requires:	php-pear-PEAR-core >= 1.4.0
+Requires:	php-pear-PEAR-core >= 1:1.3.3
+Requires:	php-simplexml
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,9 +37,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.

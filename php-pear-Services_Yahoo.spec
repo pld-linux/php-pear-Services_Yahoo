@@ -5,7 +5,7 @@ Summary:	%{_pearname} - provides access to the Yahoo! Web Services
 Summary(pl.UTF-8):	%{_pearname} - klasa umożliwiająca dostęp do usług WWW Yahoo!
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	6
+Release:	7
 License:	Apache v2.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz

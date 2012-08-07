@@ -1,11 +1,11 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		alpha
 %define		_pearname	Services_Yahoo
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - provides access to the Yahoo! Web Services
 Summary(pl.UTF-8):	%{_pearname} - klasa umożliwiająca dostęp do usług WWW Yahoo!
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	7
+Release:	8
 License:	Apache v2.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -15,10 +15,10 @@ URL:		http://pear.php.net/package/Services_Yahoo/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(simplexml)
 Requires:	php-pear
 Requires:	php-pear-HTTP_Request
 Requires:	php-pear-PEAR-core >= 1:1.3.3
-Requires:	php-simplexml
 Obsoletes:	php-pear-Services_Yahoo-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

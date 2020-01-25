@@ -1,6 +1,5 @@
 %define		_status		alpha
 %define		_pearname	Services_Yahoo
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - provides access to the Yahoo! Web Services
 Summary(pl.UTF-8):	%{_pearname} - klasa umożliwiająca dostęp do usług WWW Yahoo!
 Name:		php-pear-%{_pearname}
